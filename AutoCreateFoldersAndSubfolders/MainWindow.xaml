@@ -5,8 +5,16 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:AutoCreateFoldersAndSubfolders"
         mc:Ignorable="d"
-        Title="MainWindow" Height="350" Width="525">
+        Title="Auto Create Folder And Sub-Folders" Height="350" Width="525">
     <Grid>
-        
+        <Button Name="SelectPath" Content="Path to folder" FontSize="18" FontFamily="Times New Roman" HorizontalAlignment="Left" Height="45" Margin="10,10,0,0" VerticalAlignment="Top" Width="130" VerticalContentAlignment="Center" Click="SelectPath_Click"/>
+        <Label Name="PathFolder" Content="" FontSize="18" FontFamily="Times New Roman" HorizontalContentAlignment="Left" HorizontalAlignment="Stretch" Height="45" Margin="145,10,10,0" VerticalAlignment="Top" Width="362" VerticalContentAlignment="Center"/>
+        <Label Content="Create folder name" FontSize="18" FontFamily="Times New Roman" HorizontalAlignment="Left" HorizontalContentAlignment="Right" Height="45" Margin="10,60,0,0" VerticalAlignment="Top" Width="190" VerticalContentAlignment="Center"/>
+        <TextBox Name="NewFolderName" FontSize="18" FontFamily="Times New Roman" HorizontalAlignment="Left" Height="45" Margin="205,60,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="265" VerticalContentAlignment="Center"/>
+        <Label Content="Create sub-folder name" FontSize="18" FontFamily="Times New Roman" HorizontalAlignment="Left" HorizontalContentAlignment="Right" Height="45" Margin="10,110,0,0" VerticalAlignment="Top" Width="190" VerticalContentAlignment="Center"/>
+        <TextBox Name="NewSubFolderName" FontSize="18" FontFamily="Times New Roman" HorizontalAlignment="Left" Height="45" Margin="205,110,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="265" VerticalContentAlignment="Center"/>
+        <Label Content="Number of sub-folders" FontSize="18" FontFamily="Times New Roman" HorizontalAlignment="Left" HorizontalContentAlignment="Right" Height="45" Margin="10,160,0,0" VerticalAlignment="Top" Width="190" VerticalContentAlignment="Center"/>
+        <TextBox Name="NumberOfSubFolders" FontSize="18" FontFamily="Times New Roman" HorizontalAlignment="Left" HorizontalContentAlignment="Center" Height="45" Margin="205,160,0,0" TextWrapping="Wrap" Text="0" VerticalAlignment="Top" Width="86" VerticalContentAlignment="Center"/>
+        <Button Name="CreateFolder" Content="Create" FontSize="18" FontFamily="Times New Roman" HorizontalAlignment="Center" Height="58" Margin="10,200,10,10" VerticalAlignment="Bottom" Width="164" Click="CreateFolder_Click"/>
     </Grid>
 </Window>
